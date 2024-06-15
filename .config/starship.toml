@@ -15,7 +15,9 @@ $python\
 $nodejs\
 $rust\
 $golang\
-[ ](fg:#212736)\
+[](fg:#212736 bg:#1d2230)\
+$cmd_duration\
+[ ](fg:#1d2230)\
 \n└>\\[$username@$hostname\\]:$character"""
 
 [directory]
@@ -79,6 +81,11 @@ format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
 symbol = ""
 style = "bg:#212736"
 format = '[[ $symbol ($version) ](fg:#769ff0 bg:#212736)]($style)'
+
+[cmd_duration]
+min_time = 0
+style = 'bg:#1d2230'
+format = '[[ |  $duration](fg:#a0a9cb bg:#1d2230)]($style)'
 
 [character]
 success_symbol = '[\$](bold green)'
