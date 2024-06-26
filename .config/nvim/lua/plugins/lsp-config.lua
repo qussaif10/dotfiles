@@ -69,10 +69,18 @@ return {
 				capabilities = capabilities,
 			})
 
-			vim.keymap.set("n", "<leader>ih", vim.lsp.buf.hover, {})
-			vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
-			vim.keymap.set("n", "<leader>gD", vim.lsp.buf.declaration, {})
-			vim.keymap.set("n", "<leader>da", vim.lsp.buf.code_action, {})
+			lsp_config.pylsp.setup({
+				capabilities = capabilities,
+			})
+
+			lsp_config.gopls.setup({
+				capabilities = capabilities,
+			})
+
+			vim.keymap.set("n", "<leader>ih", vim.lsp.buf.hover, { desc = "hover info" })
+			vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, { desc = "go to definition" })
+			vim.keymap.set("n", "<leader>gD", vim.lsp.buf.declaration, { desc = "go to declaration" })
+			vim.keymap.set("n", "<leader>da", vim.lsp.buf.code_action, { desc = "code action" })
 		end,
 	},
 }

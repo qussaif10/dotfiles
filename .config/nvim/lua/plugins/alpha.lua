@@ -30,6 +30,6 @@ return {
             autocmd FileType alpha setlocal nofoldenable
         ]])
 
-        vim.keymap.set("n", "<leader>al", ":Alpha<CR>", {})
+        vim.keymap.set("n", "<leader>al", ":Alpha<CR>", { desc = "Go to dashboard" })
     end,
 }
