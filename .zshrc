@@ -16,6 +16,8 @@ export PATH="$PATH:/usr/local/lldb/bin"
 export GOROOT="/usr/local/go"
 export PATH="$PATH:$GOROOT/bin"
 
+export PATH="$PATH:$(go env GOPATH)/bin"
+
 export AWS_ENDPOINT_URL=http://localhost:9000
 
 export NVM_DIR="$HOME/.nvm"
@@ -67,3 +69,18 @@ eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
 # $HOME/.ssh_script.sh
+
+# bun completions
+[ -s "/home/qussai/.bun/_bun" ] && source "/home/qussai/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# pnpm
+export PNPM_HOME="/home/qussai/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

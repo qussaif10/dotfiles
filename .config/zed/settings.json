@@ -1,0 +1,41 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run the `zed: Open Default Settings` command
+// from the command palette
+{
+  "base_keymap": "VSCode",
+  "vim_mode": true,
+  "ui_font_size": 16,
+  "ui_font_family": "FiraCode Nerd Font",
+  "buffer_font_size": 16,
+  "buffer_font_family": "FiraCode Nerd Font",
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "One Dark"
+  },
+  "terminal": {
+    "font_family": "FiraCode Nerd Font"
+  },
+  "languages": {
+    "TypeScript": {
+      "tab_size": 4
+    },
+    "JSON": {
+      "tab_size": 4
+    },
+    "TSX": {
+      "tab_size": 4
+    },
+    "JavaScript": {
+      "tab_size": 4
+    }
+  },
+  "tab_bar": {
+    "show": false
+  }
+}

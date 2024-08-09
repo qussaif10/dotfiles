@@ -40,6 +40,7 @@ return {
 					"dockerls",
 					"docker_compose_language_service",
 					"gopls",
+                    "eslint"
 				},
 			})
 		end,
@@ -59,6 +60,18 @@ return {
 
 			lsp_config.rust_analyzer.setup({
 				capabilities = capabilities,
+                settings = {
+                    ["rust_analyzer"] = {
+                        proc_macro = {
+                            ignored = {
+                                leptos_macro = {
+                                    "component",
+                                    "server"
+                                }
+                            }
+                        }
+                    }
+                }
 			})
 
 			lsp_config.tsserver.setup({
@@ -76,6 +89,9 @@ return {
 			lsp_config.gopls.setup({
 				capabilities = capabilities,
 			})
+            lsp_config.eslint.setup({
+                capabilities = capabilities,
+            })
 
 			vim.keymap.set("n", "<leader>ih", vim.lsp.buf.hover, { desc = "hover info" })
 			vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, { desc = "go to definition" })

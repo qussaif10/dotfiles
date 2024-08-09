@@ -1,5 +1,7 @@
 vim.opt.clipboard = "unnamedplus"
 
+vim.env.PATH = vim.env.PATH .. ':/usr/local/go/bin'
+
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.softtabstop = 4
@@ -23,5 +25,8 @@ vim.keymap.set("n", "<leader>j", "<C-w>j", {})
 vim.keymap.set("n", "<leader>k", "<C-w>k", {})
 vim.keymap.set("n", "<leader>l", "<C-w>l", {})
 
-vim.keymap.set("n", "<leader>vp", ":vsp<CR>", { desc = "vertical split"} )
-vim.keymap.set("n", "<leader>sp", ":sp<CR>", { desc = "horizontal split"} )
+vim.keymap.set("n", "<leader>vp", "<cmd>vsp<CR>", { desc = "vertical split"} )
+vim.keymap.set("n", "<leader>sp", "<cmd>sp<CR>", { desc = "horizontal split"} )
+
+vim.keymap.set("n", "<leader>p", "<cmd>w<CR>", { desc = "save buffer"} )
+vim.keymap.set("n", "<leader>ap", "<cmd>wa<CR>", { desc = "save all"} )
