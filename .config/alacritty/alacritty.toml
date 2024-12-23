@@ -1,0 +1,9 @@
+[font]
+normal = { family = "FiraCode Nerd Font" }
+size = 13
+
+[window]
+decorations = "None"
+
+[terminal]
+shell = "/usr/bin/zsh"
