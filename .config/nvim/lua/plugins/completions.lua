@@ -5,10 +5,7 @@ return {
 	version = "*",
 
 	opts = {
-		keymap = {
-            preset = "default",
-            ["<CR>"]  = { "select_and_accept", "fallback" }
-        },
+		keymap = { preset = "default" },
 
 		appearance = {
 			use_nvim_cmp_as_default = true,

@@ -27,6 +27,3 @@ vim.keymap.set("n", "<leader>l", "<C-w>l", {})
 
 vim.keymap.set("n", "<leader>vp", "<cmd>vsp<CR>", { desc = "vertical split" })
 vim.keymap.set("n", "<leader>sp", "<cmd>sp<CR>", { desc = "horizontal split" })
-
-vim.keymap.set("n", "<leader>p", "<cmd>w<CR>", { desc = "save buffer" })
-vim.keymap.set("n", "<leader>ap", "<cmd>wa<CR>", { desc = "save all" })

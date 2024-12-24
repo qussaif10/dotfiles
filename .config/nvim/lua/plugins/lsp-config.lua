@@ -1,5 +1,6 @@
 local servers = {
 	"lua_ls",
+    "svelte",
 	"ts_ls",
 	"terraformls",
 	"rust_analyzer",

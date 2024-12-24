@@ -8,7 +8,5 @@ return {
 
 	config = function()
 		require("noice").setup()
-
-		vim.keymap.set("n", "<leader>nd", "<cmd>NoiceDismiss<CR>", { desc = "clear notifications" })
 	end,
 }
