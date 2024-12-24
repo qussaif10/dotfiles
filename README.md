@@ -1,8 +1,9 @@
-## Dependencies
+## Tools
  - nvim
  - ripgrep
  - fzf
  - zoxide
  - alacritty
  - starship
- - neovide (optional)
+ - neovide
+ - tmux
