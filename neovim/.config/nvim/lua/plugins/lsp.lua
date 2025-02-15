@@ -40,7 +40,6 @@ local servers = {
     { name = "dockerls" },
     { name = "docker_compose_language_service" },
     { name = "gopls" },
-    { name = "nil_ls" },
     { name = "cssls" },
     { name = "html" },
     { name = "jsonls" },

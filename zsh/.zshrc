@@ -7,6 +7,8 @@ fi
 
 source "${ZINIT_HOME}/zinit.zsh"
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 autoload -U compinit && compinit -C
 
 zinit light zsh-users/zsh-completions
