@@ -2,21 +2,12 @@
   "$schema" : "https:\/\/schema.linearmouse.app\/0.10.0",
   "schemes" : [
     {
-      "if" : {
-        "device" : {
-          "vendorID" : "0x46d",
-          "productName" : "G502 HERO Gaming Mouse",
-          "category" : "mouse",
-          "serialNumber" : "158D39563034",
-          "productID" : "0xc08b"
-        }
-      },
       "scrolling" : {
-        "reverse" : {
-          "vertical" : true
-        },
         "speed" : {
           "vertical" : 0
+        },
+        "reverse" : {
+          "vertical" : true
         },
         "acceleration" : {
           "vertical" : 1
@@ -24,6 +15,32 @@
         "distance" : {
           "vertical" : 6
         }
+      },
+      "if" : {
+        "device" : {
+          "vendorID" : "0x46d",
+          "serialNumber" : "158D39563034",
+          "category" : "mouse",
+          "productName" : "G502 HERO Gaming Mouse",
+          "productID" : "0xc08b"
+        }
+      }
+    },
+    {
+      "scrolling" : {
+        "reverse" : {
+          "vertical" : false
+        }
+      },
+      "if" : {
+        "device" : {
+          "productName" : "G502 HERO Gaming Mouse",
+          "productID" : "0xc08b",
+          "vendorID" : "0x46d",
+          "serialNumber" : "158D39563034",
+          "category" : "mouse"
+        },
+        "app" : "com.mojang.minecraftlauncher"
       }
     }
   ]

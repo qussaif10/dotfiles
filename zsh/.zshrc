@@ -44,7 +44,9 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color {}'
 
 alias ls='eza'
 alias clr='clear'
+alias k='kubectl'
 alias neofetch='fastfetch'
+alias vim='nvim'
 
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh --cmd cd)"
@@ -69,11 +71,7 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 export EDITOR=nvim
 
-# pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - zsh)"
-
 export PATH=/home/qussai/bin:$PATH
 
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+export PATH="/opt/homebrew/opt/openjdk@21/bin:$PATH"

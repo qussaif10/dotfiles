@@ -3,8 +3,8 @@ return {
     version = "*",
 
     keys = {
-        { "<leader>a", "<cmd>HopWordAC<CR>", desc = "Hop after cursor" },
-        { "<leader>A", "<cmd>HopWordBC<CR>", desc = "Hop before cursor" },
+        { "s", "<cmd>HopWordAC<CR>", desc = "Hop after cursor" },
+        { "S", "<cmd>HopWordBC<CR>", desc = "Hop before cursor" },
     },
 
     config = function()
