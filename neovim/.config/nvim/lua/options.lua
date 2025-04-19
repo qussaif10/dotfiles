@@ -39,7 +39,7 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 vim.keymap.set("x", "<leader>p", '"_dP', { desc = "Paste Without Copy" })
-vim.keymap.set({ "n", "v" }, "<leader>d", '"_d', { desc = "Delete Without Copy" })
+vim.keymap.set({ "n", "v" }, "<leader>dw", '"_d', { desc = "Delete Without Copy" })
 
 vim.keymap.set("n", "<leader>h", "<C-w>h", { desc = "Move To Left Split" })
 vim.keymap.set("n", "<leader>j", "<C-w>j", { desc = "Move To Below Split" })

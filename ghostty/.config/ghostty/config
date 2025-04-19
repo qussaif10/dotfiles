@@ -1,40 +1,43 @@
 font-family = "Monaspace Neon"
 font-size = 18
 
+background-opacity = 0.85
+background-blur = 20
+
 shell-integration-features = no-cursor, sudo
 cursor-style = block
 mouse-hide-while-typing = true
 
 gtk-titlebar = false
 
-keybind = ctrl+s>r=reload_config
-keybind = ctrl+s>n=new_window
-keybind = ctrl+s>x=close_surface
+keybind = ctrl+b>r=reload_config
+keybind = ctrl+b>n=new_window
+keybind = ctrl+b>x=close_surface
 
-keybind = ctrl+s>c=new_tab
-keybind = ctrl+s>shift+l=next_tab
-keybind = ctrl+s>shift+h=previous_tab
-keybind = ctrl+s>comma=move_tab:-1
-keybind = ctrl+s>period=move_tab:1
+keybind = ctrl+b>c=new_tab
+keybind = ctrl+b>shift+l=next_tab
+keybind = ctrl+b>shift+h=previous_tab
+keybind = ctrl+b>comma=move_tab:-1
+keybind = ctrl+b>period=move_tab:1
 
-keybind = ctrl+s>1=goto_tab:1
-keybind = ctrl+s>2=goto_tab:2
-keybind = ctrl+s>3=goto_tab:3
-keybind = ctrl+s>4=goto_tab:4
-keybind = ctrl+s>5=goto_tab:5
-keybind = ctrl+s>6=goto_tab:6
-keybind = ctrl+s>7=goto_tab:7
-keybind = ctrl+s>8=goto_tab:8
-keybind = ctrl+s>9=goto_tab:9
+keybind = ctrl+b>1=goto_tab:1
+keybind = ctrl+b>2=goto_tab:2
+keybind = ctrl+b>3=goto_tab:3
+keybind = ctrl+b>4=goto_tab:4
+keybind = ctrl+b>5=goto_tab:5
+keybind = ctrl+b>6=goto_tab:6
+keybind = ctrl+b>7=goto_tab:7
+keybind = ctrl+b>8=goto_tab:8
+keybind = ctrl+b>9=goto_tab:9
 
-keybind = ctrl+s>-=new_split:right
-keybind = ctrl+s>/=new_split:down
+keybind = ctrl+b>-=new_split:right
+keybind = ctrl+b>/=new_split:down
 
-keybind = ctrl+s>j=goto_split:bottom
-keybind = ctrl+s>k=goto_split:top
-keybind = ctrl+s>h=goto_split:left
-keybind = ctrl+s>l=goto_split:right
+keybind = ctrl+b>j=goto_split:bottom
+keybind = ctrl+b>k=goto_split:top
+keybind = ctrl+b>h=goto_split:left
+keybind = ctrl+b>l=goto_split:right
 
-keybind = ctrl+s>z=toggle_split_zoom
+keybind = ctrl+b>z=toggle_split_zoom
 
-keybind = ctrl+s>e=equalize_splits
+keybind = ctrl+b>e=equalize_splits

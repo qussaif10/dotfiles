@@ -3,8 +3,8 @@
   "schemes" : [
     {
       "scrolling" : {
-        "speed" : {
-          "vertical" : 0
+        "distance" : {
+          "vertical" : 6
         },
         "reverse" : {
           "vertical" : true
@@ -12,16 +12,16 @@
         "acceleration" : {
           "vertical" : 1
         },
-        "distance" : {
-          "vertical" : 6
+        "speed" : {
+          "vertical" : 0
         }
       },
       "if" : {
         "device" : {
-          "vendorID" : "0x46d",
-          "serialNumber" : "158D39563034",
-          "category" : "mouse",
           "productName" : "G502 HERO Gaming Mouse",
+          "vendorID" : "0x46d",
+          "category" : "mouse",
+          "serialNumber" : "158D39563034",
           "productID" : "0xc08b"
         }
       }
@@ -33,14 +33,43 @@
         }
       },
       "if" : {
+        "app" : "com.mojang.minecraftlauncher",
         "device" : {
-          "productName" : "G502 HERO Gaming Mouse",
-          "productID" : "0xc08b",
-          "vendorID" : "0x46d",
+          "category" : "mouse",
           "serialNumber" : "158D39563034",
-          "category" : "mouse"
+          "productID" : "0xc08b",
+          "productName" : "G502 HERO Gaming Mouse",
+          "vendorID" : "0x46d"
+        }
+      }
+    },
+    {
+      "if" : {
+        "device" : {
+          "vendorID" : "0x258a",
+          "category" : "mouse",
+          "productName" : "Wired Gaming Mouse",
+          "productID" : "0x36"
+        }
+      },
+      "scrolling" : {
+        "distance" : {
+          "vertical" : 6
         },
-        "app" : "com.mojang.minecraftlauncher"
+        "reverse" : {
+          "vertical" : true
+        },
+        "speed" : {
+          "vertical" : 0
+        },
+        "acceleration" : {
+          "vertical" : 1
+        }
+      },
+      "pointer" : {
+        "disableAcceleration" : true,
+        "acceleration" : 1,
+        "speed" : 0.0689655172413792768
       }
     }
   ]

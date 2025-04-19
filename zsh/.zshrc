@@ -52,6 +52,8 @@ eval "$(starship init zsh)"
 eval "$(zoxide init zsh --cmd cd)"
 eval "$(fzf --zsh)"
 
+bindkey -e
+
 if [[ -t 0 && $- = *i* ]]; then
     stty -ixon
 fi
@@ -75,3 +77,5 @@ export PATH=/home/qussai/bin:$PATH
 
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 export PATH="/opt/homebrew/opt/openjdk@21/bin:$PATH"
+
+export PATH="$PATH:$(go env GOPATH)/bin"
