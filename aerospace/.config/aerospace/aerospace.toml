@@ -180,4 +180,5 @@ automatically-unhide-macos-hidden-apps = false
     enter = 'mode main'
 
 [workspace-to-monitor-force-assignment]
+5 = 'secondary'
 10 = 'secondary'

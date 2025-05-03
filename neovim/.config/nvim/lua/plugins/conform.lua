@@ -8,6 +8,11 @@ return {
 			formatters_by_ft = {
 				swift = { "swiftformat" },
 				lua = { "stylua" },
+				javascript = { "prettier" },
+				typescript = { "prettier" },
+				svelte = { "prettier" },
+				css = { "prettier" },
+				html = { "prettier" },
 			},
 			log_level = vim.log.levels.ERROR,
 		})
