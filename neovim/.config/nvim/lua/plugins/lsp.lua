@@ -23,7 +23,18 @@ local servers = {
 			settings = { Lua = {} },
 		},
 	},
-
+	{
+		name = "yamlls",
+		config = {
+			on_attach = function(_, buffer)
+				if vim.bo[buffer].filetype == "helm" then
+					vim.schedule(function()
+						vim.cmd("LspStop ++force yamlls")
+					end)
+				end
+			end,
+		},
+	},
 	{ name = "rust_analyzer" },
 	{ name = "svelte" },
 	{ name = "ts_ls" },
@@ -35,7 +46,6 @@ local servers = {
 	{ name = "sqls" },
 	{ name = "tailwindcss" },
 	{ name = "wgsl_analyzer" },
-	{ name = "yamlls" },
 	{ name = "zls" },
 	{ name = "dockerls" },
 	{ name = "docker_compose_language_service" },
@@ -43,6 +53,7 @@ local servers = {
 	{ name = "cssls" },
 	{ name = "html" },
 	{ name = "jsonls" },
+	{ name = "helm_ls" },
 }
 
 return {
@@ -75,7 +86,7 @@ return {
 
 	{
 		"neovim/nvim-lspconfig",
-        dependencies = "saghen/blink.cmp",
+		dependencies = "saghen/blink.cmp",
 		event = { "BufReadPre", "BufNewFile" },
 
 		keys = {
@@ -88,7 +99,7 @@ return {
 		},
 
 		config = function()
-            vim.diagnostic.config({ virtual_text = true })
+			vim.diagnostic.config({ virtual_text = true })
 
 			local lsp_config = require("lspconfig")
 			local capabilities = require("blink.cmp").get_lsp_capabilities()
@@ -102,8 +113,8 @@ return {
 			end
 
 			lsp_config["sourcekit"].setup({
-                capabilities = capabilities
-            })
+				capabilities = capabilities,
+			})
 		end,
 	},
 }
